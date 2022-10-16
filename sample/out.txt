@@ -1,0 +1,127 @@
+{
+  type: 'title',
+  currEnum: 'n',
+  parentEnum: null,
+  name: 'Title',
+  text: 'The second line in the file always set [title] property of the title node. This configuration can not be overwritten.',
+  notes: '',
+  crossLinks: []
+}
+{
+  type: 'heading',
+  currEnum: 'n1',
+  parentEnum: 'n',
+  name: '1 Heading',
+  text: '',
+  notes: '',
+  crossLinks: []
+}
+{
+  type: 'heading',
+  currEnum: 'n1.1',
+  parentEnum: 'n1',
+  name: '1.1 Sub-heading',
+  text: '',
+  notes: '',
+  crossLinks: []
+}
+{
+  type: 'content',
+  currEnum: 'n1.1.1',
+  parentEnum: 'n1.1',
+  name: '1.1.1 Content',
+  text: 'By deafult, the content nodes must be multiple lines. The second line will set [text] property',
+  notes: 'The third and the rest of the lines can either set [notes] property or be joined to the [text] property - depending on the extractNotes configuration.',
+  crossLinks: []
+}
+{
+  type: 'heading',
+  currEnum: 'n1.2',
+  parentEnum: 'n1',
+  name: '1.2 Multiple line heading node',
+  text: 'This is an example of overwriting the node type setting. The second lines, by default, are saved in [text] property.',
+  notes: 'The third lines and below are dealt as explained in 1.1.1 above.',
+  crossLinks: []
+}
+{
+  type: 'content',
+  currEnum: 'n1.2.1',
+  parentEnum: 'n1.2',
+  name: '1.2.1 Single line content node',
+  text: '',
+  notes: '',
+  crossLinks: []
+}
+{
+  type: 'content',
+  currEnum: 'n1.2.2',
+  parentEnum: 'n1.2',
+  name: '1.2.2 Content with cross-link',
+  text: 'This is an example of cross-linked node to (1.1.1).',
+  notes: 'Cross-links are captrured only from the [text] properties. As this text is in the [notes], this (1.2.1) will not be taken as a cross-link. However, if extractNotes is false, all lines will be set in the [text] property - see a sample below.',
+  crossLinks: [ 'n1.1.1' ]
+}
+{
+  type: 'content',
+  currEnum: 'n1.2.3',
+  parentEnum: 'n1.2',
+  name: '1.2.3 Content without notes',
+  text: 'Here is a second line.\n' +
+    'And third line that will be joined to the [text] property.',
+  notes: '',
+  crossLinks: []
+}
+{
+  type: 'heading',
+  currEnum: 'n2',
+  parentEnum: 'n',
+  name: '2 Second branch',
+  text: '',
+  notes: '',
+  crossLinks: []
+}
+{
+  type: 'heading',
+  currEnum: 'n2.1',
+  parentEnum: 'n2',
+  name: 'Heading without index',
+  text: '',
+  notes: '',
+  crossLinks: []
+}
+{
+  type: 'content',
+  currEnum: 'n2.1.1',
+  parentEnum: 'n2.1',
+  name: '2.1.1 Content',
+  text: 'Content text.',
+  notes: 'Content notes.',
+  crossLinks: []
+}
+{
+  type: 'content',
+  currEnum: 'n2.1.1.1',
+  parentEnum: 'n2.1.1',
+  name: '2.1.1.1 Getting deeper',
+  text: 'Content text with cross-link (1.2.1)',
+  notes: '',
+  crossLinks: [ 'n1.2.1' ]
+}
+{
+  type: 'heading',
+  currEnum: 'n2.2',
+  parentEnum: 'n2',
+  name: '2.2 Heading',
+  text: '',
+  notes: '',
+  crossLinks: []
+}
+{
+  type: 'content',
+  currEnum: 'n2.2.1',
+  parentEnum: 'n2.2',
+  name: '2.2.1 Last example',
+  text: "That's it :)",
+  notes: '',
+  crossLinks: []
+}

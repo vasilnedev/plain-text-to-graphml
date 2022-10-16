@@ -1,0 +1,10 @@
+{
+    "titleLabels":":TITLE",
+    "headingLabels":":HEADING",
+    "contentLabels":":CONTENT",
+    "treeLinkLabels":"HAS",
+    "crossLinkLabels":"REFER",
+    "renderIndexes":true,
+    "renedrCrossLinks":true,
+    "extractNotes":true
+}

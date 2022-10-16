@@ -1,0 +1,42 @@
+Short Title
+Longer meaningful title of document
+Third line will go in [notes] by default
+
+1 Heading
+
+1.1 Sub-heading
+
+1.1.1 Content
+By deafult, the content nodes must be multiple lines. The second line will set [text] property
+The third and the rest of the lines can either set [notes] property or be joined to the [text] property - depending on the [extractNotes] configuration.
+
+1.2 Multiple line heading node //{ "type":"heading" }
+This is an example of overwriting the node type setting. The second lines, by default, are saved in [text] property.
+The third lines and below are dealt as explained in 1.1.1 above.
+
+1.2.1 Single line content node //{ "type":"content" }
+
+1.2.2 Content with cross-link
+This is an example of cross-linked node to (1.1.1).
+Cross-links are captrured only from the [text] properties. As this text is in the [notes], this reference (1.2.1) will not be taken to cross-links. 
+However, if [extractNotes] is false, all lines will be set in the [text] property - see a sample below.
+
+1.2.3 Content without notes //{ "extractNotes":false }
+Here is a second line.
+And third line that will be joined to the [text] property with a cross link to (1.2.2)
+
+2 Second branch
+
+2.1 Heading which will not render the index in front of this line //{ "renderIndexes":false }
+
+2.1.1 Multiline Heading //{ "type":"heading" }
+Content text.
+Content notes.
+
+2.1.1.1 Getting deeper
+Content text with cross-link (1.2.1)
+
+2.2 Heading
+
+2.2.1 Last example
+That's it :)
