@@ -1,0 +1,9 @@
+{
+    "rootLabels":":TITLE",
+    "middleLabels":":HEADING",
+    "leafLabels":":CONTENT",
+    "treeLinkLabels":"HAS",
+    "crossLinkLabels":"REFER",
+    "renderIndexes":true,
+    "renedrCrossLinks":true
+}

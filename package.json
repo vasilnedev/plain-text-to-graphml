@@ -1,7 +1,7 @@
 {
   "name": "plain-text-to-graphml",
-  "version": "1.0.0",
-  "description": "Creates GraphML code from plain text",
+  "version": "1.1.0",
+  "description": "Creates GraphML code from plain text document",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
