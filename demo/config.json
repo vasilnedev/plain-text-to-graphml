@@ -5,5 +5,7 @@
     "treeLinkLabels":"HAS",
     "crossLinkLabels":"REFER",
     "renderIndexes":true,
-    "renedrCrossLinks":true
+    "renedrCrossLinks":true,
+    "currIndexRegExp":"^([\\w-\\.]*)",
+    "parentIndexRegExp":"([\\w-\\.])[0-9]*$"
 }

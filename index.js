@@ -7,6 +7,9 @@
 
 const text2graphml = ( config , input ) => {
     
+    const currIndexRegExp   = new RegExp( config.currIndexRegExp )
+    const parentIndexRegExp = new RegExp( config.parentIndexRegExp )
+
     // Make the input text XML compliant
     input = input.replaceAll( '<' , '&lt;' )
     input = input.replaceAll( '>' , '&gt;' )
@@ -31,13 +34,14 @@ const text2graphml = ( config , input ) => {
            For example: if first line starts with 1.2.3_, the current index is 1.2.3 and the parent is 1.2
            Then add letter 'n' so the indexes will turn to n1.2.3 and n1.2.
            The root indexes are 'n' (current) and null (parent)*/
-        let currIndex = name.match( /^([0-9\.]*)/ )
+
+        let currIndex = name.match( currIndexRegExp )
         if( currIndex && !nodeConfig.renderIndexes ) name = name.substring( currIndex[0].length + 1 ) // Delete the enumerator from the name if configred
 
         let parentIndex = null
         if( currIndex && currIndex[0]!='' ){
             currIndex   = currIndex[0]
-            parentIndex = currIndex.match(/([0-9\.])[0-9]*$/)
+            parentIndex = currIndex.match( parentIndexRegExp )
             parentIndex = currIndex.substring( 0 , parentIndex.index )
             currIndex = 'n' + currIndex
             parentIndex = 'n' + parentIndex

@@ -4,8 +4,8 @@
 <key id="text"   for="node" attr.name="text"/>
 <key id="labels" for="node" attr.name="labels"/>
 <graph id="G" edgedefault="directed">
-<node id="n">
-<data key="labels">:TITLE</data>
+<node id="nSHORT">
+<data key="labels">:CONTENT</data>
 <data key="name">SHORT TITLE</data>
 <data key="text">Full title of document</data>
 </node>
@@ -88,6 +88,7 @@ If we landlord stanhill mr whatever pleasure supplied concerns so. Exquisite by 
 At ourselves direction believing do he departure. Celebrated her had sentiments understood are projection set. Possession ye no mr unaffected remarkably at. Wrote house in never fruit up. Pasture imagine my garrets an he. However distant she request behaved see nothing. Talking settled at pleased an of me brother weather. 
 </data>
 </node>
+<edge source="nSHOR" target="nSHORT" label="HAS" />
 <edge source="n" target="n1" label="HAS" />
 <edge source="n1" target="n1.1" label="HAS" />
 <edge source="n1.1" target="n1.1.1" label="HAS" />
