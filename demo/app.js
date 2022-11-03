@@ -1,5 +1,5 @@
 const fs = require('fs')
-const text2graphml = require('../index')
+const text2graphml = require('../index') // replace this with const text2graphml = require('plain-text-to-graphml')
 
 const args = process.argv.slice(2)
 
